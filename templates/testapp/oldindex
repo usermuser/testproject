@@ -1,0 +1,10 @@
+<html>
+<head></head>
+<title></title>
+<body>
+    {% if user.is_authenticated %} <body bgcolor="green">
+        this text is for authenticated users only
+    {%else%} <body bgcolor="red">
+        you are NOT authenticated!
+    {% endif %}
+</html>

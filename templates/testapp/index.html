@@ -1,34 +1,6 @@
-<html>
+{% extends "base.html" %}
+{% load i18n %}
 
-<head></head>
-
-<title></title>
-
-<body>
-
-000000000000000000000000000000000000000000000000
-
-{% if user.is_authenticated %}
-this text is for authenticated users only
-{%else%}
-you are NOT authenticated!
-{% endif %}
-0
-
-0
-
-<body bgcolor="grey"></body>
-
-4
-
-34
-
-342
-
-34
-
-2
-
-</html>
-
-
+{% block content %}
+Index page which was loaded from /templates/testapp folder and which extends base.html
+{% endblock %}
