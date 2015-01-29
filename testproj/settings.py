@@ -43,7 +43,7 @@ INSTALLED_APPS = (
 
 REGISTRATION_OPEN = True         # If True, users can register
 ACCOUNT_ACTIVATION_DAYS = 7     # One-week activation window; you may, of course, use a different value.
-REGISTRATION_AUTO_LOGIN = True  # If True, the user will be automatically logged in.
+REGISTRATION_AUTO_LOGIN = False  # If True, the user will be automatically logged in.
 LOGIN_REDIRECT_URL = '/testapp/'  # The page you want users to arrive at after they successful log in
 LOGIN_URL = '/accounts/login/'  # The page users are directed to if they are not logged in,
                                                                 # and are trying to access pages requiring authentication
@@ -107,3 +107,14 @@ STATICFILES_DIRS = (
     '/var/www/static/',
 )
 '''
+
+#Email configuration
+#http://stackoverflow.com/questions/6367014/how-to-send-email-via-django
+#https://media.readthedocs.org/pdf/django-registration-redux/latest/django-registration-redux.pdf
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'lwrdrstv@gmail.com'
+EMAIL_HOST_PASSWORD = 'SMDlwrd2'
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'LaweridusSetakus@gmail.com'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
