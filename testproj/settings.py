@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'testapp',
     'registration',#typical reusable app
+    'south',
 )
 
 
