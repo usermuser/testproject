@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'testapp',
     'registration',#typical reusable app
     'south',
+    'ecom',
 )
 
 
